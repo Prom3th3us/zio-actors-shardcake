@@ -8,7 +8,7 @@ import scala.util.{ Failure, Success, Try }
 import zio.actors.ActorSystem
 import zio.actors.Supervisor
 import zio.actors.ActorRef
-import example.infra.Layers.ActorSystemZ
+import infra.Layers.ActorSystemZ
 
 object GuildEventSourced {
   sealed trait GuildMessage[+_]

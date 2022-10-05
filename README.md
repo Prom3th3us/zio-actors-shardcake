@@ -29,7 +29,7 @@ The app provided combines two examples given by the libraries:
 
 To run the example:
 - [terminal-1] ```$ cd docker; docker-compose up redis -d```
-- [terminal-2] ```$ sbt "zio/runMain example.infra.ShardManagerApp"```
+- [terminal-2] ```$ sbt "shard-manager/runMain infra.ShardManagerApp"```
 - [terminal-3] ```$ sbt "zio/runMain example.app.GuildESApp"```
 
 ## 🤝 Contributing

@@ -1,4 +1,4 @@
-package example.infra
+package infra
 
 import com.devsisters.shardcake.StorageRedis.Redis
 import dev.profunktor.redis4cats.Redis
@@ -24,7 +24,7 @@ object Layers {
       }
 
       (for {
-        client   <- RedisClient[Task].from("redis://foobared@localhost")
+        client   <- RedisClient[Task].from("redis://localhost")
         commands <- Redis[Task].fromClient(client, RedisCodec.Utf8)
         pubSub   <- PubSub.mkPubSubConnection[Task, String, String](client, RedisCodec.Utf8)
       } yield ZEnvironment(commands, pubSub)).toScopedZIO

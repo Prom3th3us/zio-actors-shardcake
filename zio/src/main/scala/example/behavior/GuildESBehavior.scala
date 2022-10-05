@@ -8,7 +8,7 @@ import zio.actors.{ ActorRef, ActorSystem, Supervisor }
 import zio.{ Dequeue, RIO, ZIO }
 
 import scala.util.Try
-import example.infra.Layers.ActorSystemZ
+import infra.Layers.ActorSystemZ
 
 object GuildESBehavior {
   sealed trait GuildESMessage

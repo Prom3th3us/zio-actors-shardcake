@@ -5,8 +5,8 @@ import com.devsisters.shardcake.interfaces.Serialization
 import dev.profunktor.redis4cats.RedisCommands
 import example.behavior.GuildESBehavior.GuildESMessage.Join
 import example.behavior.GuildESBehavior.{ GuildES, behavior }
-import example.infra.Layers
-import example.infra.Layers.ActorSystemZ
+import infra.Layers
+import infra.Layers.ActorSystemZ
 import zio.actors.ActorSystem
 import zio.{ Random, Scope, System, Task, ZIO, ZIOAppDefault, ZLayer }
 

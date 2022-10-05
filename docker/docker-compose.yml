@@ -5,3 +5,11 @@ services:
     image: redis
     ports:
       - 6379:6379
+  
+  shard-manager:
+    container_name: shard-manager
+    image: prom3theus/shard-manager
+
+  zio-actors-shardcake:
+    container_name: zio-actors-shardcake
+    image: prom3theus/zio-actors-shardcake

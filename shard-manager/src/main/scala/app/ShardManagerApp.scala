@@ -1,8 +1,9 @@
-package example.infra
+package app
 
 import com.devsisters.shardcake.interfaces.PodsHealth
 import com.devsisters.shardcake._
 import zio.{ Task, ZIOAppDefault, ZLayer }
+import infra.Layers
 
 object ShardManagerApp extends ZIOAppDefault {
   def run: Task[Nothing] =
